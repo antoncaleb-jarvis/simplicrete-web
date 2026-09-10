@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Simplicrete monogram">
+  <defs><style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&amp;display=swap');
+    .m{font-family:'Playfair Display',Georgia,'Times New Roman',serif;fill:#FBF7EF}
+  </style></defs>
+  <g fill="none" stroke="#FBF7EF" stroke-width="6">
+    <rect x="78" y="78" width="330" height="330"/>
+    <rect x="104" y="104" width="330" height="330"/>
+  </g>
+  <text class="m" x="256" y="368" text-anchor="middle" font-size="278" font-weight="500">S</text>
+</svg>
