@@ -58,11 +58,14 @@
   /* HERO */
   .hero{padding:104px 0 92px;background:
     linear-gradient(180deg,rgba(38,35,31,.03),rgba(38,35,31,.09)),var(--bg)}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
   .hero h1{font-size:clamp(2.3rem,5.4vw,4rem);max-width:16ch;color:var(--char);margin-bottom:.5em}
   .hero p{font-size:1.18rem;color:var(--muted);max-width:52ch;margin-bottom:1.8em}
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
   .hero-strip{display:flex;gap:34px;flex-wrap:wrap;margin-top:3em;font-size:.86rem;font-weight:600;color:var(--muted)}
   .hero-strip div::before{content:"";display:inline-block;width:7px;height:7px;background:var(--accent);margin-right:9px;vertical-align:middle}
+  .hero-img{width:100%;height:100%;min-height:340px;max-height:520px;object-fit:cover;border:1px solid var(--line)}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-img{order:-1;max-height:320px}}
 
   /* FINISHES */
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:44px;background:var(--line);border:1px solid var(--line)}
@@ -158,20 +161,23 @@
 </header>
 
 <section class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Decorative Concrete Installers &middot; Cape Town</div>
-    <h1>Seamless concrete finishes, done properly.</h1>
-    <p>SL Marble, stone carpet, epoxy and Hyrez polyurethane. One team, installed to spec, for homes and commercial spaces across [confirm service area].</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#contact">Book a free site assessment</a>
-      <a class="btn btn-line" href="#finishes">See the finishes</a>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Decorative Concrete Installers &middot; Cape Town</div>
+      <h1>Seamless concrete finishes, done properly.</h1>
+      <p>SL Marble, stone carpet, epoxy and Hyrez polyurethane. One team, installed to spec, for homes and commercial spaces across [confirm service area].</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#contact">Book a free site assessment</a>
+        <a class="btn btn-line" href="#finishes">See the finishes</a>
+      </div>
+      <div class="hero-strip">
+        <div>Residential &amp; commercial</div>
+        <div>Indoor &amp; outdoor systems</div>
+        <div>MCC-system applicators</div>
+        <div>Fixed written quotes</div>
+      </div>
     </div>
-    <div class="hero-strip">
-      <div>Residential &amp; commercial</div>
-      <div>Indoor &amp; outdoor systems</div>
-      <div>MCC-system applicators</div>
-      <div>Fixed written quotes</div>
-    </div>
+    <img class="hero-img" src="images/hero-microcement-sunset-lounge.jpg" alt="Polished seamless microcement lounge floor reflecting a sunset ocean view through floor-to-ceiling glass">
   </div>
 </section>
 
